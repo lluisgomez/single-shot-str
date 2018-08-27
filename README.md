@@ -61,7 +61,7 @@ python eval_STR.py
 
 The script will calculate the mean Average Precision for the given dataset and save the top10 results for each query in a json file.
 
-There some parameters that you may need to change at the begining of the ``eval_STR.py`` script:
+There are some parameters that you may need to change at the beginning of the ``eval_STR.py`` script:
 
 ```
     img_shape    = (608, 608, 3)
