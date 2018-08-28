@@ -61,7 +61,7 @@ python eval_STR.py
 
 The script will calculate the mean Average Precision for the given dataset and save the top10 results for each query in a json file.
 
-There are some parameters that you may need to change at the beginning of the ``eval_STR.py`` script:
+There are some parameters that you may want to play with at the beginning of the ``eval_STR.py`` script:
 
 ```
     img_shape    = (608, 608, 3)
@@ -73,4 +73,18 @@ There are some parameters that you may need to change at the beginning of the ``
     gt_data_path = './datasets/IIIT_STR_V1.0/data.mat' # uses GT format of IIIT_STR & Sports10K datasets
     inp_path     = './datasets/IIIT_STR_V1.0/imgDatabase/'
 ```
+
+## Training
+
+We do not provide our training code here because it is dependent in our own modification of the [Darknet](https://pjreddie.com/darknet/) C framework. However, the training can be reproduced by following the details in the paper.
+
+### Training data
+
+We have trained our model in a modified version of the synthetic dataset of Gupta et al.[1]. Their dataset generator has been modified to use a custom dictionary with the 90K most frequent English words with the rationale that in the original dataset there was no control about word occurrences, and the distribution of word instances had a large bias towards stop-words and words with special characters or non ASCII symbols that we do not contemplate in our PHOC representation. Moreover, since the PHOC representation of a word with a strong rotation does not make sense under the pyramidal scheme employed, the dataset generator was modified to allow rotated text up to only 15 degrees. This way we generated a dataset of ~1 million images for training purposes.
+
+The SynthText\_90KDict dataset can be downloaded [here](http://datasets.cvc.uab.es/rrc/SynthText_90KDict.tar) (41Gb).
+
+Notice that in a second training stage we also use the ICDAR15 and ICDAR13 datasets that can be downloaded from the [Robust Reading Competition website](http://rrc.cvc.uab.es).
+
+[1] A. Gupta, A. Vedaldi, A. Zisserman. Synthetic data for text localisation in natural images. CVPR 2016.
 
