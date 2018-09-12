@@ -23,7 +23,7 @@ If you make use of the code in this repository for scientific purposes, we appre
 
 ## Dependencies
 
-[Tensorflow](https://www.tensorflow.org/) >= 1.0.1 (tested with 1.0.1 and 1.4.0)
+[Tensorflow](https://www.tensorflow.org/) >= 1.0.1 (tested with 1.10.1, 1.4.1 and 1.0.1)
 
 Numpy, Sklearn, Scipy, ...
 
@@ -36,6 +36,8 @@ cd single-shot-str/cphoc/
 gcc -c -fPIC `python-config --cflags` cphoc.c
 gcc -shared -o cphoc.so cphoc.o `python-config --ldflags`
 ```
+
+NOTE: the cphoc lib only works with python2.7
 
 ## Pretrained model
 
