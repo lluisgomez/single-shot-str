@@ -90,3 +90,14 @@ Notice that in a second training stage we also use the ICDAR15 and ICDAR13 datas
 
 [1] A. Gupta, A. Vedaldi, A. Zisserman. Synthetic data for text localisation in natural images. CVPR 2016.
 
+### Demo Videos
+
+Demo videos of real time text spotting with our method are shown.
+Advertisement time exposure: Text spotting of a specific brand 'Heineken' on a soccer match:
+<p align="center"> <img src="heineken.gif"/> </p>
+
+Visually impared aid: Text spotting of 'Oreo' in a supermarket:
+<p align="center"> <img src="oreo.gif"/> </p>
+
+Full videos of Text retrieval and text spotting of videos in different scenarios can be seen here:
+[here](https://drive.google.com/drive/folders/1wi5BaOx-nBosCIXNnBTCCrZHezt3J5iX?usp=sharing)
