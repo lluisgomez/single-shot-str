@@ -99,5 +99,4 @@ Advertisement time exposure: Text spotting of a specific brand 'Heineken' on a s
 Visually impared aid: Text spotting of 'Oreo' in a supermarket:
 <p align="center"> <img src="oreo.gif"/> </p>
 
-Full videos of Text retrieval and text spotting of videos in different scenarios can be seen here:
-[here](https://drive.google.com/drive/folders/1wi5BaOx-nBosCIXNnBTCCrZHezt3J5iX?usp=sharing)
+Full videos of Text retrieval and text spotting of videos in different scenarios can be seen [here](https://drive.google.com/drive/folders/1wi5BaOx-nBosCIXNnBTCCrZHezt3J5iX?usp=sharing).
